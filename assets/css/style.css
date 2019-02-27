@@ -1,11 +1,9 @@
 body {
-    /* background-image: url ("../images/dmitrij-paskevic-44124-unsplash.jpg"); */
     background-image: url("../images/dmitrij-paskevic-44124-unsplash.jpg");
     font-family: 'Cuprum', sans-serif;
 }
 
 .container {
-    /* background-image: url("..images/dark-honeycomb.png"); */
     background-color: #d1dfe7;opacity:0.9;
     width: 80%;
     height: 520px;
