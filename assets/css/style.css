@@ -1,3 +1,18 @@
+body {
+    /* background-image: url ("../images/dmitrij-paskevic-44124-unsplash.jpg"); */
+    background-image: url("../images/dmitrij-paskevic-44124-unsplash.jpg");
+}
+
+.container {
+    /* background-image: url("..images/dark-honeycomb.png"); */
+    background-color: #999;
+    top: 30px;
+    width: 800px;
+    height: 520px;
+    text-align: center;
+    box-shadow: 5px 5px 5px black;
+}
+
 h4 {
     color: black;
     font-size: 20px;
@@ -7,7 +22,7 @@ h4 {
 }
 
 h1 {
-    color: black;
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
     text-align: center;
@@ -16,3 +31,4 @@ h1 {
 .start {
     text-align: center;
 }
+
