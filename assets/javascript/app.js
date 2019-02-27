@@ -7,6 +7,7 @@
 // After a few seconds, display the next question without user input
 // end of game print "All done, here's how you did!" followed by correct, incorrect, & unanswered tallies
 // Start Over? click will start the game over again  (without reloading the page)
+// Added to main portfolio page at https://missybarringer.github.io/
 
 $(document).ready(function() {
     // global variable declarations
@@ -33,7 +34,7 @@ $(document).ready(function() {
         correct:"2",
         image: ("assets/images/lassoFish.jpg")
     }, { 
-        question:"In Vermont, a woman can't wear what without written permission from their husband?",
+        question:"In Vermont, a woman can't wear what without written permission from her husband?",
         answer:["Shawl","Wig","Hat","False teeth"],
         correct:"3",
         image: ("assets/images/falseTeeth.jpg")

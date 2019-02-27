@@ -5,7 +5,7 @@
 ____________________________________
 ## Technology
 * CSS3, HTML5, Javascript, Bootstrap, jQuery
-* [GitHub Repository Link](https://github.com/missybarringer/unit-4-game.git)
+* [GitHub Repository Link](https://github.com/missybarringer/TriviaGame.git)
 ____________________________________
 ## About - Vandy Bootcamp assignment with the following instructions...
 ### Overview
@@ -44,7 +44,7 @@ All contributions and suggestions are welcome!
 For direct contributions, please fork the repository and file a pull request.
 ____________________________________
 ## Contact
-* [Website published here](https://missybarringer.github.io/unit-4-game/)
+* [Website published here](https://missybarringer.github.io/TriviaGame/)
 * e-mail: barringer.margaret@gmail.com
 * Twitter: @goatfeatherfarm
 * Facebook: @goatfeatherfarm
