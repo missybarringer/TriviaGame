@@ -1,34 +1,66 @@
 body {
     /* background-image: url ("../images/dmitrij-paskevic-44124-unsplash.jpg"); */
     background-image: url("../images/dmitrij-paskevic-44124-unsplash.jpg");
+    font-family: 'Cuprum', sans-serif;
 }
 
 .container {
     /* background-image: url("..images/dark-honeycomb.png"); */
-    background-color: #999;
-    top: 30px;
-    width: 800px;
+    background-color: #d1dfe7;opacity:0.9;
+    width: 80%;
     height: 520px;
     text-align: center;
     box-shadow: 5px 5px 5px black;
 }
 
-h4 {
-    color: black;
-    font-size: 20px;
-    text-align: center;
-    background-color: #666;
-    border: 2px;
+.jumbotron {
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 h1 {
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
+    color: #7b3e1b;
+    margin-top: 20px;
+    font-size: 40px;
     text-align: center;
+    width: 100%;
 }
 
-.start {
-    text-align: center;
+h3 {
+    color: #333;
+    margin-top: 20px;
 }
 
+h4 {
+    color: #333;
+    font-size: 20px;
+    text-align: center;
+    background-color: #9d9077;
+    margin-top: 20px;
+    border: 2px;
+}
+
+h4:hover {
+    background-color: goldenrod;
+}
+
+h5 {
+    color: #333;
+    margin-top: 10px;
+}
+
+.startStyle {
+    text-align: center;
+    color: goldenrod;
+    font-weight: bold;
+    font-size: 26px;
+    width: 100%;
+}
+
+img {
+    border-radius: 50%;
+}
+
+.timeRemaining {
+    font-size: 22px;
+}

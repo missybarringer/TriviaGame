@@ -19,29 +19,60 @@ $(document).ready(function() {
     var answered = false;
     var correct;
         
-    var start = $(".start").html("Start Game");
+    var start = $("#start").html("Start Game");
     start.on("click", startGame);
-    $(".start-over").on("click", startGame);
+    $("#start").append("<p /><img src='assets/images/lawPicTrans-01.png' width='200px' height='150px'>");
+    $("#start-over").on("click", startGame);
         
     var triviaQandA = [{
-        question:"What is the fastest animal?",
-        answer:["cheetah","turtle","giraffe","elephant"],
-        correct:"0",
-        image: ("assets/images/circle.png")
+        question:"In which Tennessee city is it illegal to lasso fish?",
+        answer:["Nashville","Memphis","Knoxville","Johnson City"],
+        correct:"2",
+        image: ("assets/images/lassoFish.jpg")
     }, { 
-        question:"When you are blue you turn?",
-        answer:["red","green","blue","yellow"],
+        question:"In Vermont, a woman can't wear what without written permission from their husband?",
+        answer:["Shawl","Wig","Hat","False teeth"],
+        correct:"3",
+        image: ("assets/images/falseTeeth.jpg")
+    }, {
+        question:"It is illegal in Michigan to put what on your bosses desk?",
+        answer:["Skunk","Poop","Rat","Buzzard"],
+        correct:"0",
+        image: ("assets/images/skunk.jpg")
+    }, {
+        question:"In Massachusetts, what is it illegal to have in the bathroom",
+        answer:["An electrical outlet","A light switch","A john","A heater"],
         correct:"1",
-        image: ("assets/images/dot.jpg")
+        image: ("assets/images/lightSwitch.jpg")
+    }, {
+        question:"In Oklahoma City, it's illegal for a prisoner to wear what?",
+        answer:["A tank top","A hat","Pink bikini underwear","Grills"],
+        correct:"2",
+        image: ("assets/images/pinkUndies.jpg")
+    }, {
+        question:"It is illegal in Alaska to look at what from the window of any aircraft?",
+        answer:["Reindeer","Moose","Brown Bear","Bald Eagle"],
+        correct:"1",
+        image: ("assets/images/moose.jpg")
+    }, {
+        question:"You must registar with the state of Arizona before becoming what?",
+        answer:["Prositute","Hitman","Drug dealer","Brothel operator"],
+        correct:"2",
+        image: ("assets/images/drugDealer.jpg")
+    }, {
+        question:"In Asheville NC it's illegal to do what on the streets?",
+        answer:["Sneeze","Show your butt crack","Blow your nose","Hiccup"],
+        correct:"0",
+        image: ("assets/images/sneeze.jpg")
     }];
     
     function startGame() {
         $(".summary").hide();
-        $(".start").hide();
+        $("#start").hide();
         $(".timeRemaining").show();
         $(".question").show();
         $(".answers").show();
-        $(".start-over").hide();
+        $("#start-over").hide();
         correctAnswers = 0;
         incorrectAnswers = 0;
         unansweredQuestions = 0;
@@ -74,7 +105,7 @@ $(document).ready(function() {
                 correctAnswer();
             } else {
                 answered = true;
-                $(".question").text("You chose: " + triviaQandA[indexQandA].answer[id] + "    the correct answer is: " + triviaQandA[indexQandA].answer[correct]);
+                $(".question").text("You chose: " + triviaQandA[indexQandA].answer[id] + " - " + " the correct answer is: " + triviaQandA[indexQandA].answer[correct]);
                 incorrectAnswer();
             }
             console.log(correct);
@@ -91,31 +122,25 @@ $(document).ready(function() {
             //clearInterval(intervalID);
         } else {
             timeRemaining--;
-            $(".timeRemaining").text("You have " + timeRemaining);
+            $(".timeRemaining").text("You have " + timeRemaining + " seconds left");
         }
     }
     
     function correctAnswer() {
         correctAnswers++;
-        $(".timeRemaining").text("You are spot on!!!").css({
-            "color": "#3d414f"
-        });
+        $(".timeRemaining").text("You are spot on!!!");
         reset();
     }
     
     function incorrectAnswer() {
         incorrectAnswers++;
-        $(".timeRemaining").text("You are sooo wrong").css({
-            "color": "#3d414f"
-        });
+        $(".timeRemaining").text("You are sooo wrong...");
         reset();
     }
     
     function unAnswered() {
         unansweredQuestions++;
-        $(".timeRemaining").text("You didn't choose anything...").css({
-            "color": "#3d414f"
-        });
+        $(".timeRemaining").text("You didn't choose anything...");
         reset();
     }
     
@@ -128,14 +153,14 @@ $(document).ready(function() {
             setTimeout(function () {
                 loadQandA();
                 $(".answerImage").remove();
-            }, 2000);
+            }, 4000);
         } else {
             setTimeout(function() {
                 $(".summary").show();
                 $(".question").hide();
                 $(".timeRemaining").hide();
                 $(".answers").hide();
-                $(".start-over").show();
+                $("#start-over").show();
                 $(".answerImage").remove();
                 $(".summary").append("<h4 class = answersAll end>Correct answers: " + correctAnswers + "</h4>");
                 $(".summary").append("<h4 class = answersAll end>Wrong answers: " + incorrectAnswers + "</h4>");
@@ -148,7 +173,7 @@ $(document).ready(function() {
                 //     location.reload();
                 // }, 5000);
         
-                $(".start-over").html("Start Game");
+                $("#start-over").html("Start Game");
                 start.on("click", startGame);
             }, 2000);
         }
