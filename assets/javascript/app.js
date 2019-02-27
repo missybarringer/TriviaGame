@@ -19,19 +19,19 @@ var indexQandA = 0;
 var answered = false;
 var correct;
     
-    var start = $(".start").html("Start Game");
+    var start = $(".start").html("<p class='btn btn-warning btn-md btn-block'>Start Game</p>");
     start.on("click", startGame);
     
 var triviaQandA = [{
-    question:"What is the fastest animal?",
-    answer:["cheetah","turtle","giraffe","elephant"],
-    correct:"0",
-    image: ("assets/images/circle.png")
-}, { 
-    question:"When you are blue you turn?",
-    answer:["red","green","blue","yellow"],
+    question:"In New York it is illegal to shoot rabbits from a what?",
+    answer:["Cab","Apartment window","Trolley","Horse"],
     correct:"2",
-    image: ("assets/images/dot.jpg")
+    image: ("assets/images/trolleyCar.jpg")
+}, { 
+    question:"In Vermont, a woman can't wear what without written permission from their husband?",
+    answer:["Shawl","Wig","False teeth","Hat"],
+    correct:"2",
+    image: ("assets/images/falseTeeth.jpg")
 }];
 
 function startGame() {
@@ -138,7 +138,7 @@ function reset() {
             //     location.reload();
             // }, 5000);
     
-            var start = $(".start-over").html("Start Game");
+            var start = $(".start-over").html("<p class='btn btn-danger btn-md btn-block'>Restart Game?</p>");
             start.on("click", startGame);
         }, 2000);
     }
