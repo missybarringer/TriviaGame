@@ -52,8 +52,7 @@ For direct contributions, please fork the repository and file a pull request.
 ____________________________________
 ## Contact
 * e-mail: barringer.margaret@gmail.com
-* Twitter: @goatfeatherfarm
-* Facebook: @goatfeatherfarm
-* Instagram: @goatfeatherfarm
+* Twitter: @WebWabiSabi
+* Instagram: @WebWabiSabi
 * Added to [Personal Portfolio webpage](https://missybarringer.github.io/)
 
